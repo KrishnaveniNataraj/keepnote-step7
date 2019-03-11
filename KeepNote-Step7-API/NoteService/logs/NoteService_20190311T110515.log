@@ -1,0 +1,100 @@
+2019-03-11 11:05:15 [main] INFO  c.s.keepnote.NoteServiceApplication -
+				Starting NoteServiceApplication on PC428372 with PID 4376 (D:\Step7_Final_Integration\KeepNote-Step7-API\NoteService\target\classes started by 740776 in D:\Step7_Final_Integration\KeepNote-Step7-API\NoteService)
+2019-03-11 11:05:15 [main] DEBUG c.s.keepnote.NoteServiceApplication -
+				Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-03-11 11:05:15 [main] INFO  c.s.keepnote.NoteServiceApplication -
+				No active profile set, falling back to default profiles: default
+2019-03-11 11:05:15 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e694b3f: startup date [Mon Mar 11 11:05:15 IST 2019]; root of context hierarchy
+2019-03-11 11:05:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 9091 (http)
+2019-03-11 11:05:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-9091"]
+2019-03-11 11:05:16 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-03-11 11:05:16 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_141\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_141/bin/server;C:/Program Files/Java/jre1.8.0_141/bin;C:/Program Files/Java/jre1.8.0_141/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Users\740776\AppData\Local\Microsoft\WindowsApps;C:\Users\740776\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\740776\AppData\Roaming\npm;C:\Users\740776\AppData\Local\Programs\Git\cmd;C:\Program Files\MongoDB\Server\4.0\bin;;D:\spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32-x86_64\sts-bundle\sts-3.9.6.RELEASE;;.]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 1043 ms
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'jwtFilter' to urls: [/api/v1/*]
+2019-03-11 11:05:16 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-03-11 11:05:16 [localhost-startStop-1] DEBUG c.s.keepnote.jwtfilter.JwtFilter -
+				Initializing filter 'jwtFilter'
+2019-03-11 11:05:16 [localhost-startStop-1] DEBUG c.s.keepnote.jwtfilter.JwtFilter -
+				Filter 'jwtFilter' configured successfully
+2019-03-11 11:05:17 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-11 11:05:17 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:27017 to client view of cluster
+2019-03-11 11:05:17 [cluster-ClusterId{value='5c85f39505ece71118d0bf1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:27}] to localhost:27017
+2019-03-11 11:05:17 [cluster-ClusterId{value='5c85f39505ece71118d0bf1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1700057}
+2019-03-11 11:05:17 [cluster-ClusterId{value='5c85f39505ece71118d0bf1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.deleteAllNotes(java.lang.String)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note/{userId}/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.updateNote(java.lang.String,int,com.stackroute.keepnote.model.Note)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note],methods=[GET]}" onto public java.lang.String com.stackroute.keepnote.controller.NoteController.swaggerUi()
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note/{userId}/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.deleteNote(java.lang.String,int)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.addNote(com.stackroute.keepnote.model.Note)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note/{userId}/{noteId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.getNoteById(java.lang.String,int)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/note-service/api/v1/note/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.stackroute.keepnote.controller.NoteController.getAllNoteByUserId(java.lang.String)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-11 11:05:17 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e694b3f: startup date [Mon Mar 11 11:05:15 IST 2019]; root of context hierarchy
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-11 11:05:17 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-11 11:05:17 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-03-11 11:05:17 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-03-11 11:05:17 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-03-11 11:05:17 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-03-11 11:05:17 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-03-11 11:05:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-9091"]
+2019-03-11 11:05:17 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-03-11 11:05:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 9091 (http) with context path ''
+2019-03-11 11:05:17 [main] INFO  c.s.keepnote.NoteServiceApplication -
+				Started NoteServiceApplication in 2.6 seconds (JVM running for 3.194)

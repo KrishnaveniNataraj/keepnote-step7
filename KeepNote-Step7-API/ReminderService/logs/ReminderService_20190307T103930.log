@@ -1,0 +1,2626 @@
+2019-03-07 10:39:31 [main] INFO  c.s.k.ReminderServiceApplication -
+				Starting ReminderServiceApplication on PC428463 with PID 15860 (D:\MyProject\keepnote-step7-ui-api-integration\KeepNote-Step7-API\ReminderService\target\classes started by 742044 in D:\MyProject\keepnote-step7-ui-api-integration\KeepNote-Step7-API\ReminderService)
+2019-03-07 10:39:31 [main] DEBUG c.s.k.ReminderServiceApplication -
+				Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2019-03-07 10:39:31 [main] INFO  c.s.k.ReminderServiceApplication -
+				No active profile set, falling back to default profiles: default
+2019-03-07 10:39:31 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2362f559: startup date [Thu Mar 07 10:39:31 IST 2019]; root of context hierarchy
+2019-03-07 10:39:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 8085 (http)
+2019-03-07 10:39:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-8085"]
+2019-03-07 10:39:33 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2019-03-07 10:39:33 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener -
+				The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Installables\apache-maven-3.6.0\bin;D:\Installables\spring-2.1.1.RELEASE\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Python34;C:\Users\742044\AppData\Local\Microsoft\WindowsApps;C:\Users\742044\AppData\Roaming\npm;C:\Users\742044\AppData\Local\Programs\Microsoft VS Code\bin;D:\spring-tool-suite-3.8.3.RELEASE-e4.6.2-win32-x86_64\sts-bundle\sts-3.8.3.RELEASE;;.]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 2207 ms
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+				Mapping filter: 'jwtFilter' to urls: [/api/v1/*]
+2019-03-07 10:39:33 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+				Servlet dispatcherServlet mapped to [/]
+2019-03-07 10:39:33 [localhost-startStop-1] DEBUG c.s.keepnote.jwtfilter.JwtFilter -
+				Initializing filter 'jwtFilter'
+2019-03-07 10:39:33 [localhost-startStop-1] DEBUG c.s.keepnote.jwtfilter.JwtFilter -
+				Filter 'jwtFilter' configured successfully
+2019-03-07 10:39:34 [main] INFO  org.mongodb.driver.cluster -
+				Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-03-07 10:39:34 [main] INFO  org.mongodb.driver.cluster -
+				Adding discovered server localhost:27017 to client view of cluster
+2019-03-07 10:39:34 [cluster-ClusterId{value='5c80a78e16ecaa3df4d35276', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:1, serverValue:70}] to localhost:27017
+2019-03-07 10:39:34 [cluster-ClusterId{value='5c80a78e16ecaa3df4d35276', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2267646}
+2019-03-07 10:39:34 [cluster-ClusterId{value='5c80a78e16ecaa3df4d35276', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+				Discovered cluster type of STANDALONE
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.createReminder(com.stackroute.keepnote.model.Reminder)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder/{userId}/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.deleteReminder(java.lang.String,java.lang.String)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder/{userId}/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getReminderById(java.lang.String,java.lang.String)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder],methods=[GET]}" onto public java.lang.String com.stackroute.keepnote.controller.ReminderController.swaggerUi()
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder/{userId}/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.updateReminder(com.stackroute.keepnote.model.Reminder,java.lang.String,java.lang.String)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/reminder-service/api/v1/reminder/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.stackroute.keepnote.controller.ReminderController.getAllReminders(java.lang.String)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-07 10:39:35 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+				Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2362f559: startup date [Thu Mar 07 10:39:31 IST 2019]; root of context hierarchy
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-07 10:39:35 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-07 10:39:36 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2019-03-07 10:39:36 [main] INFO  o.s.c.s.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2019-03-07 10:39:36 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Context refreshed
+2019-03-07 10:39:36 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+				Found 1 custom documentation plugin(s)
+2019-03-07 10:39:36 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+				Scanning for api listing references
+2019-03-07 10:39:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-8085"]
+2019-03-07 10:39:36 [main] INFO  o.a.tomcat.util.net.NioSelectorPool -
+				Using a shared selector for servlet write/read
+2019-03-07 10:39:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 8085 (http) with context path ''
+2019-03-07 10:39:36 [main] INFO  c.s.k.ReminderServiceApplication -
+				Started ReminderServiceApplication in 5.042 seconds (JVM running for 5.867)
+2019-03-07 10:48:29 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-07 10:48:29 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-07 10:48:29 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [rv@gmail.com]
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  org.mongodb.driver.connection -
+				Opened connection [connectionId{localValue:2, serverValue:72}] to localhost:27017
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [rv@gmail.com]
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [rv@gmail.com]
+2019-03-07 10:48:30 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='1260697.2756030618', reminderName='Reminder - 1 RV', reminderDescription='Reminder - 1 RV Desc', reminderType='Day RV', reminderCreatedBy='rv@gmail.com', reminderCreationDate=Wed Mar 06 18:22:23 IST 2019}, Reminder{reminderId='779289.8185820029', reminderName='Reminder - 2 RV', reminderDescription='Reminder - 2 RV Desc', reminderType='Night RV', reminderCreatedBy='rv@gmail.com', reminderCreationDate=Wed Mar 06 18:22:41 IST 2019}],{}>
+2019-03-07 10:48:30 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [svnspradeep@gmail.com]
+2019-03-07 10:49:26 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:49:26 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [svnspradeep@gmail.com]
+2019-03-07 10:49:52 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:49:52 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='544400.2393681287', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=null}]
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				createReminder : STARTED
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='544400.2393681287', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:50:33 IST 2019}]
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [Reminder{reminderId='544400.2393681287', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:50:33 IST 2019}]
+2019-03-07 10:50:33 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <201 Created,Reminder{reminderId='544400.2393681287', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:50:33 IST 2019},{}>
+2019-03-07 10:50:33 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : deleteReminder
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com, 544400.2393681287]
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				deleteReminder : STARTED
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : deleteReminder
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com, 544400.2393681287]
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : deleteReminder
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [svnspradeep@gmail.com, 544400.2393681287]
+2019-03-07 10:50:37 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,{}>
+2019-03-07 10:50:37 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='996162.8342680125', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=null}]
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				createReminder : STARTED
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='996162.8342680125', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:51:02 IST 2019}]
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [Reminder{reminderId='996162.8342680125', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:51:02 IST 2019}]
+2019-03-07 10:51:02 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <201 Created,Reminder{reminderId='996162.8342680125', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:51:02 IST 2019},{}>
+2019-03-07 10:51:02 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [svnspradeep@gmail.com]
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [svnspradeep@gmail.com]
+2019-03-07 10:51:19 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='996162.8342680125', reminderName='SR P - 1 Rem', reminderDescription='SR P - 1 Rem Desc', reminderType='Day', reminderCreatedBy='svnspradeep@gmail.com', reminderCreationDate=Thu Mar 07 10:51:02 IST 2019}],{}>
+2019-03-07 10:51:19 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:53:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:53:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:55:37 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:55:37 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:55:41 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:55:41 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:56:40 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:56:40 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:56:43 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:56:43 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:56:46 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:56:46 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 10:57:11 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 10:57:11 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:00:06 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:00:06 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:00:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:00:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:00:40 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:00:40 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:00:54 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:00:54 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:01:16 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:01:16 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:01:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:01:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:02:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:02:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:03:06 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:03:06 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:03:09 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:03:09 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:03:36 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:03:36 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:03:43 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:03:43 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:04:39 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:04:39 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:06:23 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:06:23 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:06:33 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:06:33 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:08:16 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:08:16 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:08:35 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:08:35 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:08:38 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:08:38 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:11:00 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:11:00 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:11:10 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:11:10 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:11:39 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:11:39 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:11:50 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:11:50 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:12:52 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:12:52 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:12:58 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:12:58 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:13:12 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:13:12 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:13:25 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:13:25 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:14:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:14:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:14:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:14:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:14:25 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:14:25 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:14:36 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:14:36 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:15:04 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:15:04 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:16:22 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:16:22 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:16:25 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:16:25 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:16:52 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:16:52 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:17:04 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:17:04 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:17:13 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:17:13 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:17:16 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:17:16 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:17:33 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:17:33 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:17:35 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:17:35 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:19:03 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:19:03 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:19:27 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:19:27 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:19:34 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:19:34 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:20:04 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:20:04 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:20:13 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:20:13 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:23:02 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:23:02 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:23:05 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:23:05 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:24:01 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:24:01 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:24:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:24:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:25:00 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:25:00 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:25:08 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:25:08 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:25:15 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:25:15 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:28:26 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:28:26 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:28:47 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:28:47 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:29:27 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:29:27 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:30:24 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:30:24 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:32:48 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:32:48 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:33:36 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:33:36 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:33:43 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:33:43 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:34:01 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:34:01 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:34:42 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:34:42 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:35:36 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:35:36 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:44:23 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:44:23 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:44:46 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:44:46 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:46:03 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:46:03 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:46:09 [http-nio-8085-exec-4] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:46:09 [http-nio-8085-exec-4] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=null}]
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.k.controller.ReminderController -
+				createReminder : STARTED
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}]
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}]
+2019-03-07 11:46:27 [http-nio-8085-exec-6] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <201 Created,Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019},{}>
+2019-03-07 11:46:27 [http-nio-8085-exec-6] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:46:31 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}],{}>
+2019-03-07 11:46:31 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:46:46 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}],{}>
+2019-03-07 11:46:46 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:48:44 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}],{}>
+2019-03-07 11:48:44 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:49:58 [http-nio-8085-exec-2] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}],{}>
+2019-03-07 11:49:58 [http-nio-8085-exec-2] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:50:02 [http-nio-8085-exec-3] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='939779.1939549408', reminderName='Rem -1', reminderDescription='Rem -1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:46:27 IST 2019}],{}>
+2019-03-07 11:50:02 [http-nio-8085-exec-3] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:53:23 [http-nio-8085-exec-5] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[],{}>
+2019-03-07 11:53:23 [http-nio-8085-exec-5] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=null}]
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.k.controller.ReminderController -
+				createReminder : STARTED
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}]
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : createReminder
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}]
+2019-03-07 11:54:33 [http-nio-8085-exec-7] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <201 Created,Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019},{}>
+2019-03-07 11:54:33 [http-nio-8085-exec-7] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:55:00 [http-nio-8085-exec-8] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}],{}>
+2019-03-07 11:55:00 [http-nio-8085-exec-8] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:55:03 [http-nio-8085-exec-9] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}],{}>
+2019-03-07 11:55:03 [http-nio-8085-exec-9] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:55:10 [http-nio-8085-exec-10] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}],{}>
+2019-03-07 11:55:10 [http-nio-8085-exec-10] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @Before ************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.k.controller.ReminderController -
+				getAllReminders : STARTED
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @After ************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Args : [raviegp@gmail.com]
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*********************************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				************Reminder Aspect @AfterReturning ************
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method Name : getAllReminders
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Method arguments : [raviegp@gmail.com]
+2019-03-07 11:55:15 [http-nio-8085-exec-1] DEBUG c.s.keepnote.aspectj.LoggingAspect -
+				Return Value: <200 OK,[Reminder{reminderId='118996.20906058606', reminderName='Rem - 1', reminderDescription='Rem - 1 Desc', reminderType='Day', reminderCreatedBy='raviegp@gmail.com', reminderCreationDate=Thu Mar 07 11:54:33 IST 2019}],{}>
+2019-03-07 11:55:15 [http-nio-8085-exec-1] INFO  c.s.keepnote.aspectj.LoggingAspect -
+				*****************************************

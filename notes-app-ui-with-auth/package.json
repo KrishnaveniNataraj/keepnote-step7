@@ -1,0 +1,42 @@
+{
+  "name": "notes-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.8.2",
+    "@material-ui/icons": "^3.0.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "express": "^4.16.4",
+    "firebase": "^5.8.0",
+    "heroku-cli": "^7.0.9",
+    "history": "^4.7.2",
+    "json-server": "^0.14.2",
+    "react": "^16.7.0",
+    "react-background-image-loader": "0.0.5",
+    "react-color": "^2.17.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.5",
+    "reactstrap": "^7.1.0"
+  },
+  "scripts": {
+    "cra-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-json-server": "./node_modules/.bin/json-server server/db.json --port 8080",
+    "start": "node server/index.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

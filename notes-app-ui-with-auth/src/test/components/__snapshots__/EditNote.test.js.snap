@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test EditNote  1`] = `
+<Portal
+  containerInfo={
+    <body
+      style="overflow: hidden; padding-right: 0px;"
+    >
+      <div
+        aria-labelledby="Edit note form"
+        class="mui-fixed MuiModal-root-15 MuiDialog-root-1"
+        role="dialog"
+        style="padding-right: 0px;"
+      >
+        <div
+          aria-hidden="true"
+          class="MuiBackdrop-root-17"
+          style="opacity: 1; -webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+        />
+        <div
+          class="MuiDialog-container-4 MuiDialog-scrollPaper-2"
+          role="document"
+          style="opacity: 1; -webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+          tabindex="-1"
+        >
+          <div
+            class="MuiPaper-root-19 MuiPaper-elevation24-45 MuiPaper-rounded-20 MuiDialog-paper-5 MuiDialog-paperScrollPaper-6 MuiDialog-paperWidthSm-9"
+          >
+            <div
+              class="MuiDialogTitle-root-46"
+              id="Edit note form"
+            >
+              <h2
+                class="MuiTypography-root-47 MuiTypography-title-53"
+              >
+                Edit Note
+              </h2>
+            </div>
+            <div
+              class="MuiDialogContent-root-82"
+            >
+              <div
+                class="MuiFormControl-root-83 MuiFormControl-marginDense-85 MuiFormControl-fullWidth-86"
+              >
+                <label
+                  class="MuiFormLabel-root-98 MuiFormLabel-filled-102 MuiFormLabel-focused-99 MuiInputLabel-focused-88 MuiInputLabel-root-87 MuiInputLabel-formControl-92 MuiInputLabel-animated-95 MuiInputLabel-shrink-94 MuiInputLabel-marginDense-93"
+                  data-shrink="true"
+                  for="note title"
+                >
+                  Note Title
+                </label>
+                <div
+                  class="MuiInputBase-root-118 MuiInput-root-105 MuiInput-underline-109 MuiInputBase-fullWidth-127 MuiInput-fullWidth-112 MuiInputBase-focused-120 MuiInput-focused-107 MuiInputBase-formControl-119 MuiInput-formControl-106 MuiInputBase-marginDense-125"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input-128 MuiInput-input-113 MuiInputBase-inputMarginDense-129 MuiInput-inputMarginDense-114"
+                    id="note title"
+                    type="text"
+                    value="note-1"
+                  />
+                </div>
+              </div>
+              <div
+                class="MuiFormControl-root-83 MuiFormControl-marginDense-85 MuiFormControl-fullWidth-86"
+              >
+                <label
+                  class="MuiFormLabel-root-98 MuiFormLabel-filled-102 MuiInputLabel-root-87 MuiInputLabel-formControl-92 MuiInputLabel-animated-95 MuiInputLabel-shrink-94 MuiInputLabel-marginDense-93"
+                  data-shrink="true"
+                  for="note description"
+                >
+                  Note Description
+                </label>
+                <div
+                  class="MuiInputBase-root-118 MuiInput-root-105 MuiInput-underline-109 MuiInputBase-fullWidth-127 MuiInput-fullWidth-112 MuiInputBase-formControl-119 MuiInput-formControl-106 MuiInputBase-marginDense-125"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input-128 MuiInput-input-113 MuiInputBase-inputMarginDense-129 MuiInput-inputMarginDense-114"
+                    id="note description"
+                    type="text"
+                    value="note-1 description"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiDialogActions-root-135"
+            >
+              <button
+                class="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-text-139 MuiButton-textPrimary-140 MuiButton-flat-142 MuiButton-flatPrimary-143 MuiDialogActions-action-136"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label-138"
+                >
+                  Cancel
+                </span>
+                <span
+                  class="MuiTouchRipple-root-166"
+                />
+              </button>
+              <button
+                class="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-text-139 MuiButton-textPrimary-140 MuiButton-flat-142 MuiButton-flatPrimary-143 MuiDialogActions-action-136"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label-138"
+                >
+                  Update
+                </span>
+                <span
+                  class="MuiTouchRipple-root-166"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  }
+>
+  <div
+    aria-labelledby="Edit note form"
+    className="mui-fixed MuiModal-root-15 MuiDialog-root-1"
+    role="dialog"
+  >
+    <div
+      aria-hidden="true"
+      className="MuiBackdrop-root-17"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    />
+    <div
+      className="MuiDialog-container-4 MuiDialog-scrollPaper-2"
+      onClick={[Function]}
+      role="document"
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      tabIndex="-1"
+    >
+      <div
+        className="MuiPaper-root-19 MuiPaper-elevation24-45 MuiPaper-rounded-20 MuiDialog-paper-5 MuiDialog-paperScrollPaper-6 MuiDialog-paperWidthSm-9"
+      >
+        <div
+          className="MuiDialogTitle-root-46"
+          id="Edit note form"
+        >
+          <h2
+            className="MuiTypography-root-47 MuiTypography-title-53"
+          >
+            Edit Note
+          </h2>
+        </div>
+        <div
+          className="MuiDialogContent-root-82"
+        >
+          <div
+            className="MuiFormControl-root-83 MuiFormControl-marginDense-85 MuiFormControl-fullWidth-86"
+          >
+            <label
+              className="MuiFormLabel-root-98 MuiFormLabel-filled-102 MuiFormLabel-focused-99 MuiInputLabel-focused-88 MuiInputLabel-root-87 MuiInputLabel-formControl-92 MuiInputLabel-animated-95 MuiInputLabel-shrink-94 MuiInputLabel-marginDense-93"
+              data-shrink={true}
+              htmlFor="note title"
+            >
+              Note Title
+            </label>
+            <div
+              className="MuiInputBase-root-118 MuiInput-root-105 MuiInput-underline-109 MuiInputBase-fullWidth-127 MuiInput-fullWidth-112 MuiInputBase-focused-120 MuiInput-focused-107 MuiInputBase-formControl-119 MuiInput-formControl-106 MuiInputBase-marginDense-125"
+              onClick={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                autoFocus={true}
+                className="MuiInputBase-input-128 MuiInput-input-113 MuiInputBase-inputMarginDense-129 MuiInput-inputMarginDense-114"
+                disabled={false}
+                id="note title"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value="note-1"
+              />
+            </div>
+          </div>
+          <div
+            className="MuiFormControl-root-83 MuiFormControl-marginDense-85 MuiFormControl-fullWidth-86"
+          >
+            <label
+              className="MuiFormLabel-root-98 MuiFormLabel-filled-102 MuiInputLabel-root-87 MuiInputLabel-formControl-92 MuiInputLabel-animated-95 MuiInputLabel-shrink-94 MuiInputLabel-marginDense-93"
+              data-shrink={true}
+              htmlFor="note description"
+            >
+              Note Description
+            </label>
+            <div
+              className="MuiInputBase-root-118 MuiInput-root-105 MuiInput-underline-109 MuiInputBase-fullWidth-127 MuiInput-fullWidth-112 MuiInputBase-formControl-119 MuiInput-formControl-106 MuiInputBase-marginDense-125"
+              onClick={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                className="MuiInputBase-input-128 MuiInput-input-113 MuiInputBase-inputMarginDense-129 MuiInput-inputMarginDense-114"
+                disabled={false}
+                id="note description"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                type="text"
+                value="note-1 description"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiDialogActions-root-135"
+        >
+          <button
+            className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-text-139 MuiButton-textPrimary-140 MuiButton-flat-142 MuiButton-flatPrimary-143 MuiDialogActions-action-136"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-138"
+            >
+              Cancel
+            </span>
+            <span
+              className="MuiTouchRipple-root-166"
+            />
+          </button>
+          <button
+            className="MuiButtonBase-root-163 MuiButton-root-137 MuiButton-text-139 MuiButton-textPrimary-140 MuiButton-flat-142 MuiButton-flatPrimary-143 MuiDialogActions-action-136"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex="0"
+            type="button"
+          >
+            <span
+              className="MuiButton-label-138"
+            >
+              Update
+            </span>
+            <span
+              className="MuiTouchRipple-root-166"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</Portal>
+`;

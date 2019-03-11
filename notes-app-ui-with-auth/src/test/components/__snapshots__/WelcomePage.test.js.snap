@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test welcome page 1`] = `
+<Fragment>
+  <div
+    align="center"
+  >
+    <h2
+      style={
+        Object {
+          "color": "green",
+        }
+      }
+    >
+      Welcome to Notes App!!!. Please login to see the features!
+    </h2>
+  </div>
+  <img
+    alt="Notes App"
+    height="100%"
+    src="notes-background.png"
+    width="100%"
+  />
+</Fragment>
+`;

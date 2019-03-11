@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+#      authentication-database: dbAdmin
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+#      database: ${MONGO_DATABASE}
+      database: userDb
+      port: 27017
+      host: localhost
+  application:
+    name: user-service
+server:
+  port: 9090
